@@ -1,0 +1,22 @@
+.portal_student_background {
+  background:#004979; !important;
+}
+.portal_student_logo {
+    top: 2px;
+    position: absolute;
+    left: 105px;
+}
+.portal_student_logo img{
+    width: 190px;
+    height: auto;
+}
+.portal_faculty_logo {
+    top: 3px;
+    position: absolute;
+    left: 70px;
+}
+.portal_faculty_logo img{
+    width: 190px;
+    height: auto;
+}
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>login form</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    background-image:url(one.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.form{
+    border-radius: 12px;
+    padding:5% 3%;
+    backdrop-filter:blur(5px);
+    border:1px black solid;
+    stroke-width: 1%;
+    padding:1% 1%;
+    
+}
+.form h1{
+    text-align:center;
+    width:100%;
+    margin-top: 5px;
+    font-size: 40px;
+  
+}
+.form .input-box{
+    width: 390px;
+    height:50px;
+    margin:30px 0;
+   
+}
+.input-box input{
+    width: 365px;
+    height:45px;
+    border:none;
+    outline: none;
+    border:2px solid rgb(20, 19, 19);
+    border-radius: 40px;
+    padding-left:15px;
+    font-size:18px;
+   background: transparent;
+}
+
+.input-box input::placeholder{
+    color:black;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 355px;
+    font-size: 18px;
+
+}
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size:18px;
+    background: transparent;
+
+
+}
+.remember-forget a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    
+
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+    
+}
+ 
+.btn{
+    width: 50%;
+    height: 8.5%;
+    position:relative;
+    top:20px;
+    left:25%;  
+    font-size:18px;
+    font-weight: 600;
+    border-radius: 30px;
+    border:2px  black solid;
+    transition:transform 2s ease;
+    background: transparent;
+    padding:10px 0px;
+    cursor: pointer;
+
+}
+
+
+
+.register-link{
+    margin-top: 10%;
+    
+    text-align: center;
+    font-size: 18px;
+
+}
+.register-link a{
+    text-decoration: none;
+    color: rgb(111, 102, 102);
+    cursor: pointer;
+
+}
+.register-link a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+</style>
+    </head>
+    <body>   
+     <div class="form">
+        <h1>Login</h1>
+        <form action="index.html" method="get">
+        
+        <div class="input-box">
+        <input type="text" placeholder="Email" required>
+        <i class='bx bxs-user'></i>
+        </div>
+
+        <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <div class="remember-forget">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forget password</a>
+        </div>
+            <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+            <p>Don't have an account?  <a href="#">Register</a></p>
+        </div>
+
+     </div>
+    </body>
+</html>

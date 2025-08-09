@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            margin: 0;
+            background-image: url(pexels-francesco-ungaro-2325447.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .form {
+            width: 90%;
+            max-width: 390px;
+            padding: 30px 25px;
+            backdrop-filter: blur(5px);
+            border: 1px solid black;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .form h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-box {
+            position: relative;
+            margin: 20px 0;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 10px 40px 10px 15px;
+            font-size: 16px;
+            border: 2px solid rgb(20, 19, 19);
+            border-radius: 40px;
+            outline: none;
+            background: transparent;
+        }
+        .input-box input::placeholder {
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .input-box i {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: black;
+        }
+        .remember-forget {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .remember-forget a {
+            text-decoration: none;
+            color: black;
+        }
+        .remember-forget a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 30px;
+            background: transparent;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.05);
+        }
+        .register-link {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .register-link a {
+            text-decoration: none;
+            color: rgb(111, 102, 102);
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Login</h1>
+        <form action="Lab.html" method="get">
+            <div class="input-box">
+                <input type="text" id="email" placeholder="Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forget">
+                <label><input type="checkbox"> Remember Me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
