@@ -183,3 +183,34 @@ margin-left: 1.5rem;
     opacity:0.4 ;
 
 }
+.music-player{
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+}
+.album{
+    width: 25%;
+    /* background-color: pink; */
+}
+.player{
+    width:50%;
+    /* background-color: orange; */
+}
+.controls{
+    width: 25%;
+    /* background-color:green; */
+}
+.player-controls{
+     display: flex; 
+   justify-content: center;
+   align-items: center;
+
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
