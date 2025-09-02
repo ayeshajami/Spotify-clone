@@ -43,8 +43,8 @@ class Andriodphone{
 };
 int main(){
     Andriodphone phone;
-    phone.setModelName("galaxy s23");
-    phone.setBrand("samsung");
+    phone.setModelName("IPHONE 15");
+    phone.setBrand("IPHONE");
     phone.setRam(8);
     phone.setStorage(128);
     
